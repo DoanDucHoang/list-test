@@ -1,0 +1,55 @@
+.list {
+    overflow-x: auto;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.list th {
+    background-color: #343434;
+    border: 3px solid #343434;
+    color: #c5c5c5;
+    padding: 8px;
+}
+
+.list td{
+  border: 3px solid #343434;
+  background-color: #dddddd;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.list td p{
+  margin: 2px 0px;
+}
+
+.button-edit {
+    padding: 7px 12px;
+    border: none;
+    margin: 10px 0px;
+    background-color: #51bc51;
+    color: white;
+    cursor: pointer;
+}
+
+.button-delete {
+    padding: 7px 12px;
+    border: none;
+    margin: 10px 0px;
+    background-color: #e47474;
+    color: white;
+    cursor: pointer;
+}
+
+.not-found {
+  text-align: center;
+}

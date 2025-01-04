@@ -1,0 +1,85 @@
+.form-create th {
+    background-color: #f0f0f0;
+    border: 3px solid #cdd7e1;
+    color: #000000;
+    padding: 8px;
+    width: 13%;
+}
+
+.form-create td {
+    border: 3px solid #cdd7e1;
+}
+
+.form-create select {
+    padding: 2px 7px;
+    border: 2px solid #cdd7e1;
+    margin: 5px 10px;
+}
+
+.form-create input[type='text'] {
+    width: 50%;
+    margin: 5px 10px;
+    border: 2px solid #cdd7e1;
+    height: 20px;
+    padding: 2px 7px;
+}
+
+.form-create input[type='number'] {
+    margin: 5px 10px;
+    padding: 2px 7px;
+    border: 2px solid #cdd7e1;
+}
+
+.form-create input[type='file'] {
+    width: 50%;
+    margin: 5px 10px;
+    border: 2px solid #cdd7e1;
+    height: 20px;
+    padding: 5px 10px;
+}
+
+.form-create input[type='radio'] {
+    margin: 5px 10px;
+    border: 2px solid #cdd7e1;
+    padding: 40px 10px;
+    transform: scale(1.5);
+}
+
+.form-create input[type='button'] {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-group {
+    float: right;
+    margin-top: 20px;
+}
+
+.button-group .cancel-btn {
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #001d38;
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.button-group .create-btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #001d38;
+    border: 2px solid #001d38;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.error-text {
+    color: red;
+}
