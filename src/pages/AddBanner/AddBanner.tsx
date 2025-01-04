@@ -44,8 +44,11 @@ const AddBanner = (props: Props) => {
     if (files) { 
       const fileRef = files[0] || ""
       const sizeFile = Math.round((fileRef.size / 1024));
-      if (sizeFile >= 2048) { 
-        setError({...error, image: "File too Big, please select a file less than 2mb"})
+      if (sizeFile >= 2048) {
+        setError({ ...error, image: "File too Big, please select a file less than 2mb" })
+        return false
+      } else if (fileRef.type !== "image/jpeg" && fileRef.type !== "image/png"  ) { 
+        setError({ ...error, image: "Only Image File" })
         return false
       }
       const fileType: string = fileRef.type || ""

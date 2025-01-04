@@ -42,6 +42,9 @@ const EditBanner = (props: Props) => {
           if (sizeFile >= 2048) { 
             setError({...error, image: "File too Big, please select a file less than 2mb"})
             return false
+          } else if (fileRef.type !== "image/jpeg" && fileRef.type !== "image/png"  ) { 
+            setError({ ...error, image: "Only Image File" })
+            return false
           }
           const fileType: string = fileRef.type || ""
           const reader = new FileReader()
